@@ -1,7 +1,92 @@
 footer{
-    height: 100px;
-    background: $secondary-color;
-    margin-top: auto;
+    background: $primary-color;
+    padding: 50px 74px;
+    padding-bottom: 30px;
+
+    .footer-content {
+        max-width: 1132px;
+        margin: 0 auto;
+
+        .top-part {
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+            padding-bottom: 37px;
+        }
+
+        .middle-part {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 29px;
+            border-top: 1px solid $black-color;
+            padding-bottom: 39px;
+            border-bottom: 1px solid $black-color;
+
+            .columns-row {
+                display: flex;
+                max-width: 622px;
+                gap: 144px;
+
+                .column {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    &:first-child {
+                        max-width: 364px;
+                    }
+
+
+                    .socials-row {
+                        display: flex;
+                        gap: 9px;
+                        align-items: center;
+                    }
+
+                    .contact-info {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        .phone-number {
+                            display: flex;
+                            align-items: center;
+                            gap: 12px;
+
+                            &::before {
+                                content: "";
+                                display: inline-block;
+                                width: 30px;
+                                height: 30px;
+                                background: url("assets/img/phone-icon.svg") center/contain no-repeat;
+                            }
+                        }
+
+                        .email {
+                            display: flex;
+                            align-items: center;
+                            gap: 12px;
+
+                            &::before {
+                                content: "";
+                                display: inline-block;
+                                width: 30px;
+                                height: 30px;
+                                background: url("assets/img/email-icon.svg") center/contain no-repeat;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .bottom-part {
+            padding-top: 40px;
+            display: flex;
+            gap: 50px;
+            justify-content: flex-end;
+        }
+    }
 }
 
  
