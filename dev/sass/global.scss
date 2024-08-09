@@ -121,7 +121,7 @@ input[type="radio"]:checked + label::before {
     font-weight: 700;
     padding: 15px 41px;
     border: none;
-    border-radius: 40px;
+    border-radius: $border-radius;
     display: flex;
     gap: 10px;
     align-items: center;
@@ -176,4 +176,116 @@ input[type="radio"]:checked + label::before {
     height: 50px;
 }
 
+.ss-main {
+    padding: 15px 20px;
+    border: 1px solid $secondary-color;
+    border-radius: $border-radius;
+    height: 60px;
 
+    .ss-arrow {
+        width: 24px;
+        height: 25px;
+        path {
+            stroke-width: 10px;
+        }
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+    
+    .ss-values .ss-single {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    &.ss-open-below {
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+
+}
+
+.ss-content {
+    &.ss-open-below{
+        margin-top: 1px !important;
+        border-radius: 0;
+        border: none;
+        border-top: 1px solid $secondary-color;
+        border-bottom: 1px solid $secondary-color;
+    }
+    .ss-list {
+        .ss-option {
+            padding: 17px 20px;
+            font-size: 20px;
+            line-height: 24px;
+            height: 60px;
+
+            &:hover {
+                background: #E8F0DD;
+                color: inherit;
+            }
+        }
+    }
+}
+
+.ss-content .ss-list .ss-option.ss-highlighted, .ss-content .ss-list .ss-option:not(.ss-disabled).ss-selected {
+    background: #E8F0DD;
+    color: inherit;
+}
+
+input {
+    padding: 16px 20px;
+    background: transparent;
+    border: 1px solid $secondary-color;
+    border-radius: $border-radius;
+    font-size: 20px;
+    line-height: 24px;
+    height: 60px;
+    width: 100%;
+
+    &::placeholder {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.textarea-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    textarea {
+        resize: none;
+        width: 100%;
+        padding: 17px 20px;
+        border: 1px solid $secondary-color;
+        border-radius: 10px;
+        background: transparent;
+        font-size: 20px;
+        line-height: 24px;
+        height: 121px;
+
+        &::placeholder {
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .symbols-amount {
+        font-size: 14px;
+        line-height: 16.8px;
+        span {
+            font-size: 14px;
+            line-height: 16.8px;
+        }
+    }
+}

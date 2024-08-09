@@ -10,4 +10,16 @@
         gap: 15px;
         margin-bottom: 15px;
     }
+
+    .row {
+        display: flex;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 500px 500px 500px;
+        gap: 50px;
+    }
+    input {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
