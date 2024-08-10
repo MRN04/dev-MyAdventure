@@ -1,0 +1,79 @@
+.cards-row {
+    display: flex;
+    gap: 44px;
+
+    .card {
+        max-width: 348px;
+        background: $secondary-bg-color;
+        border-radius: 40px;
+        overflow: hidden;
+
+        .card-image {
+            max-height: 235px;
+        }
+
+        .card-content {
+            padding: 20px 22px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            .card-header {
+                display: flex;
+                justify-content: space-between;
+
+                .card-rating {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+
+                    .card-rating__digit {
+                        font-size: 20px;
+                        line-height: 24px;
+                    }
+                }
+            }
+
+            .card-info {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .place-of-arrival, .days-amount {
+                    display: flex;
+                }
+
+                .place-of-arrival::before, .days-amount::before {
+                    content: "";
+                    display: inline-block;
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 5px;
+                }
+
+                .place-of-arrival::before {
+                    background: url("assets/img/location-icon.svg") center/contain no-repeat;
+                }
+
+                .days-amount::before {
+                    width: 25px;
+                    height: 25px;
+                    background: url("assets/img/clock-icon.svg");
+                    margin: 0 3px;
+                }
+            }
+
+            .card-book-row {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .price {
+                    font-size: 32px;
+                    font-weight: 600;
+                    line-height: 59px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.best-offers {
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+        }
+
+    }
+}
