@@ -1,0 +1,38 @@
+.first-screen {
+    margin-bottom: 100px;
+    .container-fluid {
+        position: relative;
+        z-index: -1;
+    }
+
+    .first-screen__info {
+        padding-top: 118px;
+        padding-bottom: 141px;
+        margin-left: 54px;
+        max-width: 516px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        position: relative;
+
+        p {
+            max-width: 417px;
+        }
+
+        .btn-row {
+            display: flex;
+            gap: 25px;
+        }
+    }
+
+    .background {
+        position: absolute;
+        left: 553px;
+        top: 6px;
+        z-index: -3;
+    }
+
+    .search-bar {
+        margin-top: 25px;
+    }
+}

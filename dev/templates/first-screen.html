@@ -1,4 +1,43 @@
-<div class="container">
-    <h1>Hellow, I am first screen</h1>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus doloremque sequi laborum, quidem ipsum modi. Illo eius qui veniam laboriosam unde perferendis maiores, consequuntur ab rerum animi veritatis nesciunt. Sint.
-</div>
+<section class="first-screen">
+    <div class="container-fluid">
+        <div class="first-screen__info">
+            <h1>Explore the world with us!</h1>
+            <p>A Team of experienced tourism professionals will provide you with the best advice and tips for your desire place.</p>
+            <div class="btn-row">
+                <button class="btn-primary">Book now</button>
+                <button class="btn-transparent">Learn more<span class="arrow"></span></button>
+            </div>
+        </div>
+        <img class="background" src="assets/img/first-screen-img.png">
+    </div>
+    <div class="search-bar">
+        <div class="filters">
+            <div class="search-bar-filter destination">
+                <select name="destination-filter" id="destination-filter">
+                    <option value="1">Thailand</option>
+                    <option value="2">Ukraine</option>
+                    <option value="3">USA</option>
+                </select>
+            </div>
+            <div class="search-bar-filter price">
+                <select name="price-filter" id="price-filter">
+                    <option value="1">$800-$1200</option>
+                    <option value="2">$1200-$1800</option>
+                    <option value="3">$1800-$5000</option>
+                </select>
+            </div>
+            <div class="search-bar-filter date-of-arival">
+                <div class="date-input-wrap">
+                    <input type="date">
+                </div>
+            </div>
+            <div class="swap-button"></div>
+            <div class="search-bar-filter departure-date">
+                <div class="date-input-wrap">
+                    <input type="date">
+                </div>
+            </div>
+        </div>
+        <button class="btn-primary">Search</button>
+    </div>
+</section>
