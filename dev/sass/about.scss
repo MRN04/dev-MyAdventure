@@ -17,7 +17,7 @@
 
             .features {
                 display: flex;
-                gap: 44px;
+                justify-content: space-between;
 
                 .feature {
                     max-width: 152px;

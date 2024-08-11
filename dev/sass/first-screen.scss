@@ -1,8 +1,8 @@
 .first-screen {
-    margin-bottom: 100px;
     .container-fluid {
         position: relative;
-        z-index: -1;
+        z-index: 1;
+        overflow: hidden;
     }
 
     .first-screen__info {
@@ -27,9 +27,13 @@
 
     .background {
         position: absolute;
-        left: 553px;
+        right: 0px;
         top: 6px;
         z-index: -3;
+        width: 100%;
+        
+        max-width: 579px;
+        max-height: 583px;
     }
 
     .search-bar {

@@ -24,8 +24,16 @@ footer{
 
             .columns-row {
                 display: flex;
+                width: 100%;
                 max-width: 622px;
-                gap: 144px;
+                justify-content: space-between;
+
+                &:last-child {
+                    width: inherit;
+                    .column {
+                        margin-left: 100px;
+                    }
+                }
 
                 .column {
                     display: flex;
@@ -34,6 +42,10 @@ footer{
 
                     &:first-child {
                         max-width: 364px;
+                    }
+
+                    &:nth-child(2) {
+                        margin-left: 100px;
                     }
 
 

@@ -1,4 +1,5 @@
 .best-offers {
+    margin-bottom: 100px;
     .container {
         display: flex;
         flex-direction: column;
@@ -9,5 +10,19 @@
             justify-content: space-between;
         }
 
+        .about-us__swiper {
+            max-width: 1132px;
+            .swiper-wrapper {
+                justify-content: space-between;
+                .swiper-slide {
+                    max-width: 348px;
+                }
+            }
+
+            .swiper-pagination {
+                position: static;
+                margin-top: 20px;
+            }
+        }
     }
 }
