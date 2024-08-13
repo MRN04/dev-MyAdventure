@@ -27,8 +27,9 @@
     }
 
     .container {
-        max-width: 335px;
+        padding: 0 20px;
     }
+
     .container-fluid {
         width: 100%;
         max-width: inherit;
@@ -36,7 +37,6 @@
         flex-direction: column;
         align-items: center;
         border-radius: 0;
-
     }
 
 
@@ -123,6 +123,7 @@
 
     .best-offers {
         .container {
+            padding: 0;
             max-width: inherit;
             .top {
                 justify-content: center;
@@ -197,6 +198,20 @@
                     .arrow {
                         display: none;
                     }
+                }
+            }
+        }
+    }
+
+    .advantages-block {
+        .container {
+            .header {
+                text-align: center;
+            }
+            .content {
+                justify-content: center;
+                .block-image {
+                    display: none;
                 }
             }
         }
