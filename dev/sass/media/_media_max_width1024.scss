@@ -120,6 +120,124 @@
             }
         }
     }
+
+    .best-offers {
+        .container {
+            max-width: inherit;
+            .top {
+                justify-content: center;
+
+                .btn-secondary {
+                    display: none;
+                }
+            }
+
+            .about-us__swiper {
+                overflow: hidden;
+                width: 100%;
+                max-width: inherit;
+                .swiper-wrapper {
+                    justify-content: inherit;
+
+                    .swiper-slide {
+                        display: flex;
+                        justify-content: center;
+                        max-width: inherit;
+                    }
+                }
+            }
+        }
+    }
+
+    .card {
+        max-width: 285px;
+        
+        .card-image {
+            max-height: 206px;
+            
+            image {
+                max-width: 285px;
+                height: 206px;
+            }
+        }
+
+        .card-content {
+            padding: 18px 20px;
+            gap: 10px;
+            
+            .card-header .card-rating .card-rating__digit {
+                font-size: 17px;
+                line-height: 20.4px;
+            }
+
+            .card-info {
+                gap: 5px;
+
+                .place-of-arrival, .days-amount {
+                    align-items: center;
+                }
+
+                .place-of-arrival::before {
+                    margin-right: 4px;
+                }
+
+                .place-of-arrival p, .days-amount p {
+                    height: 20px;
+                }
+            }
+
+            .card-book-row {
+                .price {
+                    font-size: 26px;
+                    line-height: 40px;
+                    font-weight: 700;
+                }
+
+                .btn-primary {
+                    .arrow {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        padding: 30px 20px;
+
+        .footer-content {
+            .top-part {
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+
+                .btn-secondary {
+                    max-width: 200px;
+                }
+            }
+            .middle-part {
+                flex-direction: column;
+                padding-top: 49px;
+                
+                .columns-row {
+                    flex-direction: column;
+                    gap: 40px;
+
+                    .column {
+                        margin-left: 0 !important;
+                        
+                        &:last-child {
+                            margin-top: 40px;
+                        }
+                    }
+                }
+            }
+
+            .bottom-part {
+                justify-content: space-between;
+            }
+        }
+    }
 }
 
 
