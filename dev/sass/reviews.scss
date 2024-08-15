@@ -1,0 +1,92 @@
+.reviews {
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        position: relative;
+
+        .reviews-swiper {
+           max-width: 1132px;
+           
+            .dark-green-bg {
+                background: $secondary-color;
+                .header {
+                    h4 {
+                        color: $white-color;
+                    }
+                    .rating {
+                        path {
+                            stroke: $white-color;
+                        }
+                        span {
+                            color: $white-color;
+                        }
+                    }
+                }
+            .content p {
+                color: $white-color;
+            }
+            } 
+            .green-bg {
+                background: $primary-color;
+            }
+            .light-green-bg {
+                background: $secondary-bg-color;
+            }
+
+            .review {
+                padding: 30px;
+                border-radius: $border-radius;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                height: 250px;
+
+                .header {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .rating {
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+
+                        .card-rating__digit {
+                            font-size: 20px;
+                            line-height: 24px;
+                            height: 24px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .swiper-button-prev, .swiper-button-next {
+            top: 25px;
+            width: 50px;
+            height: 50px;
+            background: $primary-color;
+            border-radius: 50%;
+            z-index: inherit;
+
+            &::after {
+                content: "";
+                width: 30px;
+                height: 30px;
+                display: inline-block;
+                background: url("assets/img/btn-arrow.svg") center/contain no-repeat;
+                background-size: 24px;
+            }
+        }
+        
+        .swiper-button-next {
+            right: 0;
+        }
+
+        .swiper-button-prev {
+            right: 70px;
+            left: inherit;
+            transform: rotate(180deg);
+        }
+    }
+}

@@ -217,6 +217,35 @@
         }
     }
 
+    .reviews {
+        .container {
+            gap: 40px;
+            padding: 0;
+
+            .header {
+                text-align: center;
+            }
+
+            .reviews-swiper {
+                max-width: inherit;
+                width: 100%;
+
+                .review {
+                    height: inherit;
+                }
+
+                .swiper-pagination {
+                    position: static;
+                    margin-top: 20px;
+                }
+            }
+
+            .swiper-button-prev, .swiper-button-next {
+                display: none;
+            }
+        }
+    }
+
     footer {
         padding: 30px 20px;
 

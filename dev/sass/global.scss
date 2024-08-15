@@ -317,3 +317,22 @@ input {
 a {
     text-decoration: none;
 }
+
+.swiper-pagination {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+    .swiper-pagination-bullet {
+        margin: 0 !important;
+        background: $secondary-bg-color;
+        width: 15px;
+        height: 15px;
+        transition: .2s;
+        opacity: inherit;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: $secondary-color;
+    }
+}
