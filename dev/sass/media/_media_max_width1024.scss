@@ -246,8 +246,56 @@
         }
     }
 
+    .contact-us {
+        .container {
+            gap: 40px;
+            background: $secondary-bg-color;
+            border-radius: 0;
+            padding-top: 30px;
+            padding-bottom: 30px;
+
+            .header {
+                text-align: center;
+            }
+
+            .content {
+                flex-direction: column;
+                gap: 25px;
+                border-radius: inherit;
+                overflow: inherit;
+                background: inherit;
+
+                .txt {
+                    order: -1;
+                    gap: 35px;
+                    padding: 0;
+                    width: 100%;
+                    max-width: 640px;
+                    margin: 0 auto;
+
+                    p {
+                        max-width: 400px;
+                        margin: 0 auto;
+                    }
+                }
+
+                .block-img {
+                    display: flex;
+                    justify-content: center;
+
+                    img {
+                        border-radius: $border-radius;
+                        max-width: 640px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
     footer {
         padding: 30px 20px;
+        margin-top: 90px;
 
         .footer-content {
             .top-part {

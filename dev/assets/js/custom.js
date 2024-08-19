@@ -75,3 +75,16 @@ function removeClass() {
 }
 
 burger.addEventListener("click", ShowBurgerMenu)
+
+//tel mask
+
+var telInputs = document.querySelectorAll('#phone');
+
+var maskOptions = {
+    mask: '+380(00-0000-00)',
+} 
+
+telInputs.forEach(el => {
+    var mask = IMask(el, maskOptions)
+})
+

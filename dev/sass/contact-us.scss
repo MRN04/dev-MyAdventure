@@ -1,0 +1,43 @@
+.contact-us {
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+
+        .content {
+            display: flex;
+            background: $secondary-bg-color;
+            border-radius: $border-radius;
+            overflow: hidden;
+
+            .block-img {
+                max-height: 594px;
+            }
+
+            .txt {
+                padding: 40px 60px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                
+
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    padding: 0 11px;
+
+                    .inputs {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                    }
+
+                    .btn-primary {
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}
